@@ -19,8 +19,27 @@ namespace exc11
 
         private void letraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            label1.Font = new Font("Arial", 12, FontStyle.Bold); // Substitua "Arial" pelo tipo de letra desejado
-            label1.ForeColor = Color.Blue; // Substitua Color.Blue pela cor desejada
+
+        }
+
+        private void azulToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.Blue;
+        }
+
+        private void vermelhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.Red;
+        }
+
+        private void aumentarALetraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            label1.Font = new Font("Arial", 30, FontStyle.Bold);
+        }
+
+        private void diminuirALetraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            label1.Font = new Font("Arial", 6, FontStyle.Bold);
         }
     }
 

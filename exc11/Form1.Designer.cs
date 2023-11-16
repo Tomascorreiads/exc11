@@ -31,6 +31,10 @@
             menuStrip1 = new MenuStrip();
             forrmatarToolStripMenuItem = new ToolStripMenuItem();
             letraToolStripMenuItem = new ToolStripMenuItem();
+            azulToolStripMenuItem = new ToolStripMenuItem();
+            vermelhoToolStripMenuItem = new ToolStripMenuItem();
+            aumentarALetraToolStripMenuItem = new ToolStripMenuItem();
+            diminuirALetraToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -40,7 +44,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { forrmatarToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(799, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -54,10 +58,39 @@
             // 
             // letraToolStripMenuItem
             // 
+            letraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { azulToolStripMenuItem, vermelhoToolStripMenuItem, aumentarALetraToolStripMenuItem, diminuirALetraToolStripMenuItem });
             letraToolStripMenuItem.Name = "letraToolStripMenuItem";
             letraToolStripMenuItem.Size = new Size(180, 22);
             letraToolStripMenuItem.Text = "Cor e tipo de letra";
             letraToolStripMenuItem.Click += letraToolStripMenuItem_Click;
+            // 
+            // azulToolStripMenuItem
+            // 
+            azulToolStripMenuItem.Name = "azulToolStripMenuItem";
+            azulToolStripMenuItem.Size = new Size(180, 22);
+            azulToolStripMenuItem.Text = "Azul";
+            azulToolStripMenuItem.Click += azulToolStripMenuItem_Click;
+            // 
+            // vermelhoToolStripMenuItem
+            // 
+            vermelhoToolStripMenuItem.Name = "vermelhoToolStripMenuItem";
+            vermelhoToolStripMenuItem.Size = new Size(180, 22);
+            vermelhoToolStripMenuItem.Text = "Vermelho ";
+            vermelhoToolStripMenuItem.Click += vermelhoToolStripMenuItem_Click;
+            // 
+            // aumentarALetraToolStripMenuItem
+            // 
+            aumentarALetraToolStripMenuItem.Name = "aumentarALetraToolStripMenuItem";
+            aumentarALetraToolStripMenuItem.Size = new Size(180, 22);
+            aumentarALetraToolStripMenuItem.Text = "Aumentar a letra ";
+            aumentarALetraToolStripMenuItem.Click += aumentarALetraToolStripMenuItem_Click;
+            // 
+            // diminuirALetraToolStripMenuItem
+            // 
+            diminuirALetraToolStripMenuItem.Name = "diminuirALetraToolStripMenuItem";
+            diminuirALetraToolStripMenuItem.Size = new Size(180, 22);
+            diminuirALetraToolStripMenuItem.Text = "Diminuir a letra";
+            diminuirALetraToolStripMenuItem.Click += diminuirALetraToolStripMenuItem_Click;
             // 
             // label1
             // 
@@ -73,7 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(799, 450);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -91,5 +124,9 @@
         private ToolStripMenuItem forrmatarToolStripMenuItem;
         private ToolStripMenuItem letraToolStripMenuItem;
         private Label label1;
+        private ToolStripMenuItem azulToolStripMenuItem;
+        private ToolStripMenuItem vermelhoToolStripMenuItem;
+        private ToolStripMenuItem aumentarALetraToolStripMenuItem;
+        private ToolStripMenuItem diminuirALetraToolStripMenuItem;
     }
 }
