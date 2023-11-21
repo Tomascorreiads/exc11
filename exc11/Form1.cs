@@ -41,6 +41,28 @@ namespace exc11
         {
             label1.Font = new Font("Arial", 6, FontStyle.Bold);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 newForm = new Form2();
+            newForm.Show();
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                label1.Font = fontDialog.Font;
+            }
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                label1.ForeColor = colorDialog.Color;
+            }
+        }
     }
 
 }

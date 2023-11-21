@@ -36,6 +36,8 @@
             aumentarALetraToolStripMenuItem = new ToolStripMenuItem();
             diminuirALetraToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
+            button1 = new Button();
+            menuToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             // 
             // forrmatarToolStripMenuItem
             // 
-            forrmatarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { letraToolStripMenuItem });
+            forrmatarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { letraToolStripMenuItem, menuToolStripMenuItem });
             forrmatarToolStripMenuItem.Name = "forrmatarToolStripMenuItem";
             forrmatarToolStripMenuItem.Size = new Size(74, 20);
             forrmatarToolStripMenuItem.Text = "Forrmatar ";
@@ -67,28 +69,28 @@
             // azulToolStripMenuItem
             // 
             azulToolStripMenuItem.Name = "azulToolStripMenuItem";
-            azulToolStripMenuItem.Size = new Size(180, 22);
+            azulToolStripMenuItem.Size = new Size(165, 22);
             azulToolStripMenuItem.Text = "Azul";
             azulToolStripMenuItem.Click += azulToolStripMenuItem_Click;
             // 
             // vermelhoToolStripMenuItem
             // 
             vermelhoToolStripMenuItem.Name = "vermelhoToolStripMenuItem";
-            vermelhoToolStripMenuItem.Size = new Size(180, 22);
+            vermelhoToolStripMenuItem.Size = new Size(165, 22);
             vermelhoToolStripMenuItem.Text = "Vermelho ";
             vermelhoToolStripMenuItem.Click += vermelhoToolStripMenuItem_Click;
             // 
             // aumentarALetraToolStripMenuItem
             // 
             aumentarALetraToolStripMenuItem.Name = "aumentarALetraToolStripMenuItem";
-            aumentarALetraToolStripMenuItem.Size = new Size(180, 22);
+            aumentarALetraToolStripMenuItem.Size = new Size(165, 22);
             aumentarALetraToolStripMenuItem.Text = "Aumentar a letra ";
             aumentarALetraToolStripMenuItem.Click += aumentarALetraToolStripMenuItem_Click;
             // 
             // diminuirALetraToolStripMenuItem
             // 
             diminuirALetraToolStripMenuItem.Name = "diminuirALetraToolStripMenuItem";
-            diminuirALetraToolStripMenuItem.Size = new Size(180, 22);
+            diminuirALetraToolStripMenuItem.Size = new Size(165, 22);
             diminuirALetraToolStripMenuItem.Text = "Diminuir a letra";
             diminuirALetraToolStripMenuItem.Click += diminuirALetraToolStripMenuItem_Click;
             // 
@@ -102,11 +104,29 @@
             label1.Text = "POO em C#";
             label1.Click += label1_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(564, 367);
+            button1.Name = "button1";
+            button1.Size = new Size(123, 23);
+            button1.TabIndex = 2;
+            button1.Text = "Pagina 2 -->";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(180, 22);
+            menuToolStripMenuItem.Text = "Menu";
+            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 450);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -128,5 +148,7 @@
         private ToolStripMenuItem vermelhoToolStripMenuItem;
         private ToolStripMenuItem aumentarALetraToolStripMenuItem;
         private ToolStripMenuItem diminuirALetraToolStripMenuItem;
+        private Button button1;
+        private ToolStripMenuItem menuToolStripMenuItem;
     }
 }
